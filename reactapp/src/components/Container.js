@@ -7,8 +7,8 @@ import "./style.css";
 class Container extends Component {
   // Setting the component's initial state
   // Search starts as an empty string
-  // Employess and filteredEmployess are empty arrays because that it's the structure of the data we'll be working with
-  // Order it's to reference the order that the employees are. By defaltu they come randonly and the first click will trigger then to be in asc order
+  // Employees and filtered employees are empty arrays because that it's the structure of the data we'll be working with
+  // It's to reference the order that the employees are. By default they come randomly and the first click will trigger then to be in an ascending order
   state = {
     search: "",
     employees: [],
@@ -63,7 +63,7 @@ class Container extends Component {
         employee.name.first.toLowerCase().indexOf(UserInput.toLowerCase()) > -1
     );
     this.setState({
-      // Change the state of  filteredEmployes now it holds all the employes that matches users
+      // Change the state of  filteredEmployees now it holds all the employees that matches users
       // Search and will be passed down in this state
 
       filteredEmployees,
@@ -76,7 +76,7 @@ class Container extends Component {
       .then((res) =>
         this.setState({
           // Change their both states to hold all the data from the API call(all employess) and will be passed down trough props like that
-          // Employee will remain the same and filteredEmployes will be changed and passed down during application's life. Employee will always hold all employess.
+          // Employee will remain the same and filteredEmployees will be changed and passed down during application's life. Employee will always hold all employess.
           filteredEmployees: res.data.results,
           employees: res.data.results,
         })
