@@ -8,7 +8,7 @@ class Container extends Component {
   // Setting the component's initial state
   // Search starts as an empty string
   // Employees and filtered employees are empty arrays because that it's the structure of the data we'll be working with
-  // It's to reference the order that the employees are. By default they come randomly and the first click will trigger then to be in an ascending order
+  // It's to reference the order that the employees are. By default they come randomly and the first click will trigger them to be in an ascending order
   state = {
     search: "",
     employees: [],
