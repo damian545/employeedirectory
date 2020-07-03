@@ -6,11 +6,8 @@ function SearchBox(props) {
     <div className="container-fluid">
       <header className="z-depth-3 col s12">
         <div className="row">
-          {/* <header className=" > */}
-
           <div className="col s6">
-            <h3 className="right-align headerText">Associate Directory</h3>
-            {/* <h6 className="center-align smallerHeaderText">Use the box down below to narrow your search</h6> */}
+            <h3 className="right-align headerText">Employee Directory</h3>
           </div>
           <div className="col s6 ">
             <div className="col s6 inputAndButton right-align ">
@@ -32,11 +29,10 @@ function SearchBox(props) {
                 className=" btn z-depth-2 waves-effect  searchBttn"
                 onClick={props.handleSearch}
               >
-                Search
+                <p>Search</p>
               </button>
             </div>
           </div>
-          {/* </header > */}
         </div>
       </header>
     </div>
