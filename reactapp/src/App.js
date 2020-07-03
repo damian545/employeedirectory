@@ -1,8 +1,8 @@
 import React from "react";
-import SearchResultContainer from "./components/Container";
+import SearchResultContainer from "./components/SearchResultContainer";
 
 function App() {
-  return <Container />;
+  return <SearchResultContainer />;
 }
 
 export default App;
